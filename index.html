@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="logo-cb.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,17 +29,12 @@
     <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
 
-    <link rel="stylesheet" href="assets/css/demo.css" />
 
     <link rel="stylesheet" href="assets/vendor/css/pages/front-page.css" />
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
 
-    <link rel="stylesheet" href="assets/vendor/libs/nouislider/nouislider.css" />
-    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
 
     <!-- Page CSS -->
-
     <link rel="stylesheet" href="assets/vendor/css/pages/front-page-landing.css" />
 
     <!-- Helpers -->
@@ -59,12 +54,23 @@
             align-items: center;
             justify-content: center;
         }
+
+        #contenedorSkills,
+        #contenedorEstudios,
+        #contenedorProyectos,
+        #contenedorContactame {
+            min-height: 100vh;
+        }
+
+        #contenedorEstudios,
+        #contenedorContactame {
+            background-color: #2C1A1E !important;
+        }
     </style>
 </head>
 
 <body>
-    <script src="assets/vendor/js/dropdown-hover.js"></script>
-    <script src="assets/vendor/js/mega-dropdown.js"></script>
+    
 
     <!-- Navbar: Start -->
     <nav class="layout-navbar shadow-none py-0">
@@ -80,24 +86,8 @@
                     </button>
                     <!-- Mobile menu toggle: End-->
                     <a href="landing-page.html" class="app-brand-link">
-                        <span class="app-brand-logo demo">
-                            <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                    fill="#7367F0" />
-                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                    fill="#161616" />
-                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                    fill="#161616" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                    fill="#7367F0" />
-                            </svg>
-                        </span>
-                        <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Vuexy</span>
+                        <img src="logo-sb.png" class="me-2" alt="" height="30">
+                        <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Portafolio</span>
                     </a>
                 </div>
                 <!-- Menu logo wrapper: End -->
@@ -110,20 +100,20 @@
                     </button>
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" aria-current="page" href="landing-page.html#landingHero">Sobre
+                            <a class="nav-link fw-medium" aria-current="page" href="index.html#landingHero">Sobre
                                 mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingFeatures">Skills</a>
+                            <a class="nav-link fw-medium" href="index.html#contenedorSkills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingTeam">Estudios</a>
+                            <a class="nav-link fw-medium" href="index.html#contenedorEstudios">Estudios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingFAQ">Proyectos</a>
+                            <a class="nav-link fw-medium" href="index.html#contenedorProyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="landing-page.html#landingContact">Contáctame</a>
+                            <a class="nav-link fw-medium" href="index.html#contenedorContactame">Contáctame</a>
                         </li>
                     </ul>
                 </div>
@@ -172,9 +162,62 @@
             </div>
         </section>
         <!-- End: Seccion Sobre mi -->
+        <!-- Begin: Seccion Skills -->
+        <section id="contenedorSkills" class="section-py bg-body landing-contact">
+            <div class="container mt-6">
+                <h4 class="text-center mb-1">
+                    <span class="position-relative fw-extrabold z-1">Skills
+                        <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
+                            class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
+                    </span>
+                </h4>
+
+                <p>Aqui ira la seccion de skills</p>
+            </div>
+        </section>
+        <!-- End: Seccion Skills -->
+        <!-- Begin: Seccion Estudios -->
+        <section id="contenedorEstudios" class="section-py bg-body landing-contact">
+            <div class="container mt-6">
+                <h4 class="text-center mb-1">
+                    <span class="position-relative fw-extrabold z-1">Estudios
+                        <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
+                            class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
+                    </span>
+                </h4>
+
+                <p>Aqui ira la seccion de estudios</p>
+            </div>
+        </section>
+        <!-- End: Seccion Estudios -->
         <!-- Begin: Seccion Proyectos -->
-        <h5>Seccion proyectos</h5>
+        <section id="contenedorProyectos" class="section-py bg-body landing-contact">
+            <div class="container mt-6">
+                <h4 class="text-center mb-1">
+                    <span class="position-relative fw-extrabold z-1">Proyectos
+                        <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
+                            class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
+                    </span>
+                </h4>
+
+                <p>Aqui ira la seccion de proyectos</p>
+            </div>
+        </section>
         <!-- End: Seccion Proyectos -->
+        <!-- Begin: Seccion Contáctame -->
+        <section id="contenedorContactame" class="section-py bg-body landing-contact">
+            <div class="container mt-6">
+                <h4 class="text-center mb-1">
+                    <span class="position-relative fw-extrabold z-1">Contáctame
+                        <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
+                            class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
+                    </span>
+                </h4>
+
+                <p>Aqui ira la seccion de contáctame</p>
+            </div>
+        </section>
+        <!-- End: Seccion Contáctame -->
     </div>
 
     <!-- Core JS -->
@@ -186,8 +229,6 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-    <script src="assets/vendor/libs/nouislider/nouislider.js"></script>
-    <script src="assets/vendor/libs/swiper/swiper.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/front-main.js"></script>

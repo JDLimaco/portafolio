@@ -271,10 +271,10 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
 }
 .light-style .fc-event-primary:not(.fc-list-event) {
   background-color: #e9e7fd !important;
-  color: #7367f0 !important;
+  color: #8B0000 !important;
 }
 .light-style .fc-event-primary.fc-list-event .fc-list-event-dot {
-  border-color: #7367f0 !important;
+  border-color: #8B0000 !important;
 }
 .light-style .fc-event-secondary:not(.fc-list-event) {
   background-color: #ebebed !important;
@@ -372,14 +372,14 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
   background-color: #3a3d53 !important;
 }
 .dark-style .fc .fc-day-today:not(.fc-col-header-cell) .fc-popover-body {
-  background-color: #2f3349 !important;
+  background-color: #1B1F23 !important;
 }
 .dark-style .fc .fc-divider {
   background: #44485e;
   border-color: #44485e;
 }
 .dark-style .fc .fc-popover {
-  background-color: #25293c;
+  background-color: #1B1F23;
   border: 0;
 }
 .dark-style .fc .fc-popover .fc-popover-header {
@@ -387,7 +387,7 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
 }
 .dark-style .fc .fc-list .fc-list-table th {
   border: 0;
-  background: #25293c;
+  background: #1B1F23;
 }
 .dark-style .fc .fc-list .fc-list-table .fc-list-event {
   cursor: pointer;
@@ -406,7 +406,7 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
   border-top: 1px solid #44485e;
 }
 .dark-style .fc .fc-list .fc-list-empty {
-  background-color: #25293c;
+  background-color: #1B1F23;
 }
 .dark-style .fc table,
 .dark-style .fc .fc-timegrid-axis,
@@ -426,13 +426,13 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
 }
 .dark-style .fc-event-primary:not(.fc-list-event) {
   background-color: #3a3b64 !important;
-  color: #7367f0 !important;
+  color: #8B0000 !important;
 }
 .dark-style .fc-event-primary:not(.fc-list-event) {
   box-shadow: none;
 }
 .dark-style .fc-event-primary.fc-list-event .fc-list-event-dot {
-  border-color: #7367f0 !important;
+  border-color: #8B0000 !important;
 }
 .dark-style .fc-event-secondary:not(.fc-list-event) {
   background-color: #3c4054 !important;
