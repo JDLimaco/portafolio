@@ -210,8 +210,8 @@ nav.layout-navbar.navbar-active::after {
   color: #cfcde4;
 }
 .dark-style .layout-navbar.navbar-active .navbar.landing-navbar {
-  background: #1B1F23;
-  border-color: #1B1F23;
+  background: #131619;
+  border-color: #131619;
   box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
 }
 
