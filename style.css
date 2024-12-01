@@ -1,0 +1,158 @@
+.item-success {
+	box-shadow:
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #2e4b4f,
+		inset var(--itemWidth) var(--itemWidthMinus) 0 #8b0000,
+		inset var(--itemWidthMinus) var(--itemWidth) 0 yellow,
+		inset var(--itemWidth) var(--itemWidth) 0 blue,
+		0 0 10px silver;
+}
+
+.item-info {
+	box-shadow:
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #27495f,
+		inset var(--itemWidth) var(--itemWidthMinus) 0 #8b0000,
+		inset var(--itemWidthMinus) var(--itemWidth) 0 yellow,
+		inset var(--itemWidth) var(--itemWidth) 0 blue,
+		0 0 10px silver;
+}
+
+
+.item-danger {
+	box-shadow:
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #50374a,
+		inset var(--itemWidth) var(--itemWidthMinus) 0 #8b0000,
+		inset var(--itemWidthMinus) var(--itemWidth) 0 yellow,
+		inset var(--itemWidth) var(--itemWidth) 0 blue,
+		0 0 10px silver;
+}
+
+.item {
+	transition: box-shadow ease-in-out .6s, color ease-in-out .5s;
+	width: 6.25rem;
+	height: 6.25rem;
+	border-radius: 50%;
+	text-align: center;
+	background: center/50% no-repeat;
+	cursor: pointer;
+	display: grid;
+	color: white;
+}
+
+.item:hover {
+	box-shadow:
+		inset 0 0 0 transparent,
+		inset 0 0 0 transparent,
+		inset 0 0 0 transparent,
+		inset 0 0 0 transparent,
+		0 0 10px silver;
+	color: transparent;
+}
+
+.contenedor-habilidades {
+	--itemWidth: min(300px, 30vw);
+	--itemWidthMinus: calc(-1 * var(--itemWidth));
+}
+
+.contenedor-habilidades * {
+	place-self: center;
+}
+
+.item-angular {
+	background-image: url(assets/img/habilidades-tenicas/angular.png);
+}
+
+.item-js {
+	background-image: url(assets/img/habilidades-tenicas/js.png);
+}
+
+.item-html {
+	background-image: url(assets/img/habilidades-tenicas/html.png);
+}
+
+.item-css {
+	background-image: url(assets/img/habilidades-tenicas/css.png);
+}
+
+.item-ts {
+	background-image: url(assets/img/habilidades-tenicas/ts.png);
+}
+
+.item-c {
+	background-image: url(assets/img/habilidades-tenicas/c.png);
+}
+
+.item-net-core {
+	background-image: url(assets/img/habilidades-tenicas/net-core.png);
+}
+
+.item-php {
+	background-image: url(assets/img/habilidades-tenicas/php.png);
+}
+
+.item-laravel {
+	background-image: url(assets/img/habilidades-tenicas/laravel.png);
+}
+
+.item-mysql {
+	background-image: url(assets/img/habilidades-tenicas/mysql.png);
+}
+
+.item-postgresql {
+	background-image: url(assets/img/habilidades-tenicas/postgresql.png);
+}
+
+.item-sqlserver {
+	background-image: url(assets/img/habilidades-tenicas/sqlserver.png);
+}
+
+.item-sqllite {
+	background-image: url(assets/img/habilidades-tenicas/sqllite.png);
+}
+
+.item-oracle {
+	background-image: url(assets/img/habilidades-tenicas/oracle.png);
+}
+
+.item-flutter {
+	background-image: url(assets/img/habilidades-tenicas/flutter.png);
+}
+
+.item-java {
+	background-image: url(assets/img/habilidades-tenicas/java.png);
+}
+
+.item-kotlin {
+	background-image: url(assets/img/habilidades-tenicas/kotlin.png);
+}
+
+.item-mvc {
+	background-image: url(assets/img/habilidades-tenicas/mvc.png);
+}
+
+.item-capas {
+	background-image: url(assets/img/habilidades-tenicas/capas.png);
+}
+
+.item-hexagonal {
+	background-image: url(assets/img/habilidades-tenicas/hexagonal.png);
+}
+
+.item-git {
+	background-image: url(assets/img/habilidades-tenicas/git.png);
+}
+
+.item-facturacion-electronica {
+	background-image: url(assets/img/habilidades-tenicas/facturacion-electronica.png);
+}
+
+.item-servidores-iis {
+	background-image: url(assets/img/habilidades-tenicas/servidores-iis.png);
+}
+
+.item-linux {
+	background-image: url(assets/img/habilidades-tenicas/linux.png);
+}
+
+
+/* DEMO */
+

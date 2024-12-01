@@ -42,6 +42,7 @@
 
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="assets/js/front-config.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
     <style>
         #landingHero {
@@ -65,6 +66,30 @@
 
         .habilidad {
             width: 7rem;
+        }
+
+        .habilidad-blanda {
+            width: 9rem;
+            height: 100%;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -183,146 +208,146 @@
                         Habilidades blandas
                     </button>
                 </div>
+                <div class="collapse mt-4" id="collapseHabilidadesBlandas">
+                    <div class="d-grid border pb-2">
+                        <h5 class="mt-3 text-center">Habilidades blandas</h5>
+                        <br>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <div class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img class="w-auto img-fluid-" src="assets/img/habilidades-blandas/responsabilidad.png"
+                                    alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Responsabilidad</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/proactivo.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Proactivo</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/trabajo-equipo.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Trabajo en equipo</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/adaptabilidad.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Adaptabilidad</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/pensamiento-critico.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Pensamiento crítico</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/comunicacion-efectiva.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Comunicación efectiva</h6>
+                            </div>
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                                <img src="assets/img/habilidades-blandas/liderazgo.png" alt="" height="70">
+                                <h6 class="mt-3 mb-0 text-center">Liderazgo</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="collapse- mt-4" id="collapseHabilidadesTecnicas">
                     <div class="d-grid border">
                         <h5 class="mt-3 text-center">Habilidades técnicas</h5>
                         <br>
+                        <!-- Begin: Categorias -->
                         <div class="d-flex align-items-center justify-content-center mb-4">
                             <button type="button"
-                                class="btn btn-label-success text-nowrap d-inline-flex position-relative me-4">
-                                Básico
+                                class="btn btn-label-danger text-nowrap d-inline-flex position-relative me-4">
+                                Avanzado
                                 <span
-                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-success text-white">12</span>
+                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-danger text-white">9</span>
                             </button>
                             <button type="button"
                                 class="btn btn-label-info text-nowrap d-inline-flex position-relative me-4">
                                 Intermedio
                                 <span
-                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-info text-white">12</span>
+                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-info text-white">9</span>
                             </button>
                             <button type="button"
-                                class="btn btn-label-danger text-nowrap d-inline-flex position-relative me-4">
-                                Avanzado
+                                class="btn btn-label-success text-nowrap d-inline-flex position-relative me-4">
+                                Básico
                                 <span
-                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-danger text-white">12</span>
+                                    class="position-absolute top-0 start-100 translate-middle badge badge-center rounded-pill bg-success text-white">4</span>
                             </button>
                         </div>
+                        <!-- End: Categorias -->
                         <div class="d-flex flex-wrap">
+                            <!-- Begin: Frontend -->
                             <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
                                 <h5 class="mb-3 card-title mb-2 text-center">Frontend</h5>
-                                <div class="d-flex flex-wrap justify-content-center">
-                                    <div class="habilidad d-flex flex-column align-items-center border-border-danger bg-label-danger p-4  rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/angular.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light- text-w small fw-medium mt-2">Angular</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/ts.png" height="50" class="img-fluid-"
-                                            alt="">
-                                        <label class="text-light- text-w small fw-medium mt-2">TS</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/js.png" height="50" class="img-fluid-"
-                                            alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">JS</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/html.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">HTML</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/css.png" height="50" class="img-fluid-"
-                                            alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">CSS</label>
-                                    </div>
-                                </div>
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-angular m-2"><span>Angular</span></div>
+                                    <div class="item item-danger item-js m-2"><span>JS</span></div>
+                                    <div class="item item-info item-html m-2"><span>HTML</span></div>
+                                    <div class="item item-info item-css m-2"><span>CSS</span></div>
+                                    <div class="item item-info item-ts m-2"><span>TS</span></div>
+                                </section>
                             </div>
+                            <!-- End: Frontend -->
+                            <!-- Begin: Backend -->
                             <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
                                 <h5 class="mb-3 card-title text-center">Backend</h5>
-                                <div class="d-flex flex-wrap justify-content-center">
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/c.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">C#</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/net-core.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">.NET Core</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-info p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/php.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">PHP</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-info p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/laravel.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">Laravel</label>
-                                    </div>
-                                </div>
-                            </div>                            
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-c m-2"><span>C#</span></div>
+                                    <div class="item item-danger item-net-core m-2"><span>.NET Core</span></div>
+                                    <div class="item item-info item-php m-2"><span>PHP</span></div>
+                                    <div class="item item-info item-laravel m-2"><span>Laravel</span></div>
+                                </section>
+                            </div>
+                            <!-- End: Backend -->
+                            <!-- Begin: Base de datos -->
                             <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
                                 <h5 class="mb-3 card-title text-center">Bases de datos</h5>
-                                <div class="d-flex flex-wrap justify-content-center">
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/mysql.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">MySQL</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/postgressql.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">PostgreSQL</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/sqlserver.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">SQL Server</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-info p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/sqllite.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">SQLite</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-success p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/oracle.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">Oracle</label>
-                                    </div>
-                                </div>
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-mysql m-2"><span>MySQL</span></div>
+                                    <div class="item item-danger item-postgresql m-2"><span>PostgreSQL</span></div>
+                                    <div class="item item-info item-sqlserver m-2"><span>SQL Server</span></div>
+                                    <div class="item item-success item-sqllite m-2"><span>SQLite</span></div>
+                                </section>
                             </div>
+                            <!-- End: Base de datos -->
+                            <!-- Begin: Mobile -->
                             <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
                                 <h5 class="mb-3 card-title text-center">Mobile</h5>
-                                <div class="d-flex flex-wrap justify-content-center">
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/flutter.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">Flutter</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-danger p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/java.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">Java</label>
-                                    </div>
-                                    <div class="habilidad d-flex flex-column align-items-center bg-label-success p-4 rounded m-2">
-                                        <img src="assets/img/habilidades-tenicas/kotlin.png" height="50"
-                                            class="img-fluid-" alt="">
-                                        <label class="text-light text-w small fw-medium mt-2">Kotlin</label>
-                                    </div>
-                                </div>
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-flutter m-2"><span>Flutter</span></div>
+                                    <div class="item item-info item-java m-2"><span>Java</span></div>
+                                    <div class="item item-success item-kotlin m-2"><span>Kotlin</span></div>
+                                </section>
                             </div>
+                            <!-- End: Mobile -->
+                            <!-- Begin: Arquitecturas -->
+                            <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
+                                <h5 class="mb-3 card-title text-center">Arquitecturas</h5>
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-mvc m-2"><span>MVC</span></div>
+                                    <div class="item item-success item-capas m-2"><span>Capas</span></div>
+                                    <div class="item item-success item-hexagonal m-2"><span>Hexagonal</span></div>
+                                </section>
+                            </div>
+                            <!-- End: Arquitecturas -->
+                            <!-- Begin: Conocimiento TI -->
+                            <div class="p-4 d-grid border m-4 mt-0 flex-grow-1">
+                                <h5 class="mb-3 card-title text-center">Conocimiento TI</h5>
+                                <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
+                                    <div class="item item-danger item-git m-2"><span>Git</span></div>
+                                    <div class="item item-info item-facturacion-electronica m-2"><span>Facturación electrónica</span></div>
+                                    <div class="item item-info item-linux m-2"><span>Linux</span></div>
+                                    <div class="item item-success item-servidores-iis m-2"><span>Servidores IIS</span>
+                                    </div>
+                                </section>
+                            </div>
+                            <!-- End: Conocimiento TI -->
                         </div>
-
                     </div>
                 </div>
-                <div class="collapse mt-4" id="collapseHabilidadesBlandas">
-                    <div class="d-grid border">
-                        <h5 class="mt-3 text-center">Habilidades blandas</h5>
 
-                    </div>
-                </div>
         </section>
         <!-- End: Seccion Skills -->
         <!-- Begin: Seccion Estudios -->
