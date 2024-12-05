@@ -27,11 +27,10 @@
     <!-- Core CSS -->
 
     <link rel="stylesheet" href="assets/vendor/css/pages/front-page.css" />
-    <!-- Vendors CSS -->
-
-
-    <!-- Page CSS -->
     <link rel="stylesheet" href="assets/vendor/css/pages/front-page-landing.css" />
+
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="assets/vendor/css/pages/ui-carousel.css" />
 
     <!-- Helpers -->
     <script src="assets/vendor/js/helpers.js"></script>
@@ -90,6 +89,13 @@
 
         .skill-card:hover {
             transform: scale(1.05);
+        }
+
+        /* Si quieres un fondo verde con íconos blancos */
+        .swiper-button-next,
+        .swiper-button-prev {
+            /* color: #8B0000 !important; */
+
         }
     </style>
 </head>
@@ -213,7 +219,8 @@
                         <h5 class="mt-3 text-center">Habilidades blandas</h5>
                         <br>
                         <div class="d-flex justify-content-around align-items-center">
-                            <div class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
+                            <div
+                                class="habilidad-blanda border border-rounded p-2 d-flex flex-column align-items-center justify-content-center">
                                 <img class="w-auto img-fluid-" src="assets/img/habilidades-blandas/responsabilidad.png"
                                     alt="" height="70">
                                 <h6 class="mt-3 mb-0 text-center">Responsabilidad</h6>
@@ -283,6 +290,7 @@
                                 <h5 class="mb-3 card-title mb-2 text-center">Frontend</h5>
                                 <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
                                     <div class="item item-danger item-angular m-2"><span>Angular</span></div>
+                                    <div class="item item-danger item-bootstrap m-2"><span>Bootstrap</span></div>
                                     <div class="item item-danger item-js m-2"><span>JS</span></div>
                                     <div class="item item-info item-html m-2"><span>HTML</span></div>
                                     <div class="item item-info item-css m-2"><span>CSS</span></div>
@@ -306,6 +314,7 @@
                                 <h5 class="mb-3 card-title text-center">Bases de datos</h5>
                                 <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
                                     <div class="item item-danger item-mysql m-2"><span>MySQL</span></div>
+                                    <div class="item item-danger item-maria-db m-2"><span>Maria DB</span></div>
                                     <div class="item item-danger item-postgresql m-2"><span>PostgreSQL</span></div>
                                     <div class="item item-info item-sqlserver m-2"><span>SQL Server</span></div>
                                     <div class="item item-success item-sqllite m-2"><span>SQLite</span></div>
@@ -337,8 +346,11 @@
                                 <h5 class="mb-3 card-title text-center">Conocimiento TI</h5>
                                 <section class="contenedor-habilidades d-flex flex-wrap justify-content-center">
                                     <div class="item item-danger item-git m-2"><span>Git</span></div>
-                                    <div class="item item-info item-facturacion-electronica m-2"><span>Facturación electrónica</span></div>
+                                    <div class="item item-info item-facturacion-electronica m-2"><span>Facturación
+                                            electrónica</span></div>
                                     <div class="item item-info item-linux m-2"><span>Linux</span></div>
+                                    <div class="item item-info item-excel m-2"><span>Excel</span></div>
+                                    <div class="item item-info item-cpanel m-2"><span>CPanel</span></div>
                                     <div class="item item-success item-servidores-iis m-2"><span>Servidores IIS</span>
                                     </div>
                                 </section>
@@ -353,14 +365,97 @@
         <!-- Begin: Seccion Estudios -->
         <section id="contenedorEstudios" class="section-py bg-body landing-contact">
             <div class="container mt-6">
-                <h4 class="text-center mb-1">
+                <h4 class="text-center mb-4">
                     <span class="position-relative fw-extrabold z-1">Estudios
                         <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
                             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
                     </span>
                 </h4>
-
-                <p>Aqui ira la seccion de estudios</p>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://yt3.googleusercontent.com/ytc/AIdro_kOg16cnH81FNmlBgwB1ZDuQG7ii3M0ql7J1ViXakCZbAE=s900-c-k-c0x00ffffff-no-rj"
+                                alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">SENATI</h5>
+                                <p class="text-center fw-bold ">Desarrollo de Software</p>
+                                <p class="card-text text-center">
+                                    Aprendí los conceptos básicos de programación y desarrollo de sistemas y los puse en
+                                    prácticas en múltiples proyectos
+                                </p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="btn btn-primary">Constancia de egreso</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://startupxplore.com/uploads/ff8080815235115101523595712a00de-large.png"
+                                alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Platzi</h5>
+                                <p class="card-text text-center">
+                                    Lleve diversos cursos de desarrollo de software e ingles que me ayudaron a encontrar
+                                    mis primeros
+                                    trabajos en el sector de la informática
+                                </p>
+                                <small class="text-light fw-medium">Escuelas</small>
+                                <div class="demo-inline-spacing mt-4">
+                                    <ul class="list-group list-group-timeline">
+                                        <li class="list-group-item list-group-timeline-success">Programación y
+                                            Desarrollo
+                                            Web</li>
+                                        <li class="list-group-item list-group-timeline-success">Platzi English Academy
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://pageflows.imgix.net/media/logos/udemy.png?auto=compress&ixlib=python-1.1.2&s=af4c0325bdfe4571a820be3d43b25a51"
+                                alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Udemy</h5>
+                                <p class="card-text text-center">
+                                    Profundice a fondo temas de mi interes para poder volverme un profesional más
+                                    completo
+                                </p>
+                                <small class="text-light fw-medium">Cursos</small>
+                                <div class="demo-inline-spacing mt-4">
+                                    <ul class="list-group list-group-timeline">
+                                        <li class="list-group-item list-group-timeline-success">Universidad Java - Cero
+                                            a Experto</li>
+                                        <li class="list-group-item list-group-timeline-success">Web API con C# y ASP.NET
+                                            Core</li>
+                                        <li class="list-group-item list-group-timeline-success">Flutter - Móvil: De cero
+                                            a experto</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNHgMlvba_Y-qZxtwdNnw4x6EHt7BQuZ5U3g&s"
+                                alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Centro de Idiomas San marcos</h5>
+                                <p class="text-center fw-bold ">Ingles</p>
+                                <p class="card-text text-center">
+                                    En la facultad estoy aprendiendo ingles conversacional, hablando con profesores
+                                    nativos y mejorando semana a semana
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End: Seccion Estudios -->
@@ -368,13 +463,133 @@
         <section id="contenedorProyectos" class="section-py bg-body landing-contact">
             <div class="container mt-6">
                 <h4 class="text-center mb-1">
-                    <span class="position-relative fw-extrabold z-1">Proyectos
+                    <span class="position-relative fw-extrabold z-1">Experiencia
                         <img src="../../assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
                             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
                     </span>
                 </h4>
+                <div class="divider">
+                    <div class="divider-text">Empresarial</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-3 mb-2">
+                        <div class="card border">
+                            <div class="card-body text-center">
+                                <div class="mx-auto my-6">
+                                    <img src="assets/img/experiencia/gesmin.png" alt="Avatar Image"
+                                        class="-rounded-circle -w-px-100" height="60" />
+                                </div>
+                                <h5 class="mb-0 card-title">Gesmin</h5>
+                                <span>Desarrollador Full Stack</span>
+                                <br>
+                                <span class="fw-lighter">Junio 2022 - Noviembre 2022</span>
+                                <br>
+                                <br>
+                                <small class="text-light fw-medium">Conocimientos empleados</small>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center mt-4 mb-6 gap-2">
+                                    <a href="javascript:;"><span class="badge bg-label-info">Laravel</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Maria DB</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">JS</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">GitHub</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">CPanel</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Excel</span></a>
+                                </div>
+                                <small class="text-light fw-medium">Proyectos</small>
 
-                <p>Aqui ira la seccion de proyectos</p>
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <a href="https://www.gesmin.pe/" target="_blank"
+                                        class="btn btn-sm btn-primary d-flex align-items-center">Página
+                                        web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="card border">
+                            <div class="card-body text-center">
+                                <div class="mx-auto my-6">
+                                    <img src="assets/img/experiencia/posperu.jpg" alt="Avatar Image"
+                                        class="-rounded-circle -w-px-100" height="60" />
+                                </div>
+                                <h5 class="mb-0 card-title">PosPeru</h5>
+                                <span>Desarrollador Full Stack</span>
+                                <br>
+                                <span class="fw-lighter">Noviembre 2022 - Junio 2023</span>
+                                <br>
+                                <br>
+                                <small class="text-light fw-medium">Conocimientos empleados</small>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center mt-4 mb-6 gap-2">
+                                    <a href="javascript:;"><span class="badge bg-label-info">PHP</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">JQuery</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">PostgreSQL</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">GitHub</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Bootstrap</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Facturación
+                                            electrónica</span></a>
+                                </div>
+                                <small class="text-light fw-medium">Proyectos</small>
+                                <div class="d-flex align-items-center justify-content-center mt-4">
+                                    <a href="https://posperu.com/" target="_blank"
+                                        class="btn btn-sm btn-primary d-flex align-items-center">Página
+                                        web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="card border">
+                            <div class="card-body text-center">
+                                <div class="mx-auto my-6">
+                                    <img src="assets/img/experiencia/rz-servicio-express.svg" alt="Avatar Image"
+                                        class="-bg-dark rounded-circle -w-px-100" height="60" />
+                                </div>
+                                <h5 class="mb-0 card-title">Sagitario System</h5>
+                                <span>Desarrollador Full Stack</span>
+                                <br>
+                                <span class="fw-lighter">Julio 2023 - Octubre 2024</span>
+                                <br>
+                                <br>
+                                <small class="text-light fw-medium">Conocimientos empleados</small>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center mt-4 mb-6 gap-2">
+                                    <a href="javascript:;"><span class="badge bg-label-info">Angular</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">TS</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">.Net Core Web
+                                            Api</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">GitHub</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Flutter</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Bootstrap</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Izipay</span></a>
+                                    <a href="javascript:;"><span class="badge bg-label-info">Facturación
+                                            electrónica</span></a>
+                                </div>
+                                <small class="text-light fw-medium">Proyectos</small>
+                                <br>
+                                <br>
+                                <div class="d-flex align-items-center lh-1 me-4 mb-4 mb-sm-0">
+                                    <span class="badge badge-dot bg-primary me-1"></span> Club Lawn Tennis
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mt-4">
+                                    <a href="https://clublawntennis.net.pe/" target="_blank"
+                                        class="btn btn-sm btn-primary d-flex align-items-center">Página
+                                        web</a>
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalSagitarioSystemIntranet">
+                                        Intranet
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modalSagitarioSystemAplicacionMovil">
+                                        Aplicación móvil
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="divider">
+                    <div class="divider-text">Freelance</div>
+                </div>
+
             </div>
         </section>
         <!-- End: Seccion Proyectos -->
@@ -392,6 +607,128 @@
             </div>
         </section>
         <!-- End: Seccion Contáctame -->
+
+        <!-- Begin: Modal - Sagitario System - Intranet -->
+        <div class="modal fade animate__animated fadeIn" id="modalSagitarioSystemIntranet" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Club Lawn Tennis - Intranet</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Información del proyecto -->
+                        <h6>Rol desempeñado:</h6>
+                        <p>Desarrollador Fullstack</p>
+                        <h6>Descripción:</h6>
+                        <p>Diseño y desarrollo de una intranet corporativa para la gestión interna entre las que
+                            destacan las siguientes funciones:</p>
+                        <ul>
+                            <li>Gestión de reserva de canchas</li>
+                            <li>Gestión de asociados</li>
+                            <li>Gestión de sanciones</li>
+                            <li>Gestión de pagos con la integración de Izipay</li>
+                        </ul>
+                        <h6>Tecnologías usadas:</h6>
+                        <ul class="row">
+                            <li class="col-4">Angular</li>
+                            <li class="col-4">TS</li>
+                            <li class="col-4">.NET Core Web API</li>
+                            <li class="col-4">SQL Server</li>
+                            <li class="col-4">SQL Server</li>
+                            <li class="col-4">GitHub</li>
+                            <li class="col-4">Izipay</li>
+                        </ul>
+                        <h6>Nota:</h6>
+                        <p>Este proyecto es privado y por razones de confidencialidad solo se mostrarán capturas del
+                            mismo.
+                        </p>
+                        <h6>Imágenes:</h6>
+                        <div class="swiper" id="swiperLawnTennisIntranet">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/intranet/reservas.jpg)">
+                                    Gestión de reservas
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/intranet/socios.jpg)">
+                                    Gestión de socios
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/intranet/sanciones.jpg)">
+                                    Gestión de sanciones
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/intranet/pagos.jpg)">
+                                    Gestión de pagos con la integración de Izipay
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next swiper-button-black custom-icon"></div>
+                            <div class="swiper-button-prev swiper-button-black custom-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Modal - Sagitario System - Intranet -->
+        <!-- Begin: Modal - Sagitario System - Aplicación móvil -->
+        <div class="modal fade animate__animated fadeIn" id="modalSagitarioSystemAplicacionMovil" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Club Lawn Tennis - Aplicación móvil</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Información del proyecto -->
+                        <h6>Rol desempeñado:</h6>
+                        <p>Desarrollador Mobile (Flutter)</p>
+                        <h6>Descripción:</h6>
+                        <p>Diseño y desarrollo de una aplicación móvil para Android e iOS, con funcionalidades
+                            orientadas a los usuarios finales. Las principales características incluyen:</p>
+                        <ul>
+                            <li>Gestión de reservas de canchas</li>
+                            <li>Gestión de usuarios</li>
+                        </ul>
+                        <h6>Tecnologías usadas:</h6>
+                        <ul class="row">
+                            <li class="col-4">Flutter</li>
+                            <li class="col-4">Dart</li>
+                            <li class="col-4">Firebase</li>
+                            <li class="col-4">REST API (.NET Core)</li>
+                        </ul>
+                        <h6>Nota:</h6>
+                        <p>Este proyecto es privado y por razones de confidencialidad solo se mostrarán capturas del
+                            mismo.</p>
+                        <h6>Imágenes:</h6>
+                        <div class="swiper" id="swiperLawnTennisAplicacionMovil">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/aplicativo-movil/login.jpg)">
+                                    Login
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/aplicativo-movil/reserva.jpg)">
+                                    Reservar una cancha
+                                </div>
+                                <div class="swiper-slide"
+                                    style="background-image: url(assets/img/experiencia/sagitario-system/lawn-tennis/aplicativo-movil/reservas.jpg)">
+                                    Visualizar canchas
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next swiper-button-black custom-icon"></div>
+                            <div class="swiper-button-prev swiper-button-black custom-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Modal - Sagitario System - Aplicación móvil -->
+
     </div>
 
     <!-- Core JS -->
@@ -399,11 +736,21 @@
     <script src="assets/vendor/libs/popper/popper.js"></script>
     <script src="assets/vendor/js/bootstrap.js"></script>
 
-    <!-- Main JS -->
-    <script src="assets/js/front-main.js"></script>
+
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+
 
     <!-- Page JS -->
     <script src="assets/js/front-page-landing.js"></script>
+
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+    <!-- <script src="assets/js/ui-carousel.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="assets/js/front-main.js"></script>
+
+
+    <script type="text/javascript" src="index.js" defer></script>
 </body>
 
 </html>

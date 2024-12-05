@@ -863,7 +863,8 @@ button.swiper-pagination-bullet {
   overflow: hidden !important;
 }
 .swiper .swiper-slide {
-  color: #fff;
+  /* color: #fff; */
+  /* color: #8B0000; */
 }
 .swiper .swiper-pagination-bullet.swiper-pagination-bullet-active.bg-transparent {
   background: transparent !important;
@@ -922,6 +923,7 @@ button.swiper-pagination-bullet {
 
 .dark-style .swiper-3d .swiper-pagination-bullet {
   background-color: #fff;
+  /* background-color: #8B0000; */
 }
 .dark-style .swiper-3d .swiper-button-prev.swiper-button-black,
 .dark-style .swiper-3d .swiper-button-next.swiper-button-black {
