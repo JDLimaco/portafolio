@@ -28,14 +28,15 @@
 
 .item {
 	transition: box-shadow ease-in-out .6s, color ease-in-out .5s;
-	width: 6.25rem;
-	height: 6.25rem;
+	width: 5.75rem;
+	height: 5.75rem;
 	border-radius: 50%;
 	text-align: center;
 	background: center/50% no-repeat;
 	cursor: pointer;
 	display: grid;
-	color: white;
+	color: #e7e7ee;
+	font-size: 0.875rem;
 }
 
 .item:hover {
@@ -58,118 +59,189 @@
 }
 
 .item-angular {
-	background-image: url(assets/img/habilidades-tenicas/angular.png);
+	background-image: url(assets/img/habilidades/tecnicas/angular.png);
 }
 
 .item-bootstrap {
-	background-image: url(assets/img/habilidades-tenicas/bootstrap.png);
+	background-image: url(assets/img/habilidades/tecnicas/bootstrap.png);
 }
 
 .item-js {
-	background-image: url(assets/img/habilidades-tenicas/js.png);
+	background-image: url(assets/img/habilidades/tecnicas/js.png);
 }
 
 .item-html {
-	background-image: url(assets/img/habilidades-tenicas/html.png);
+	background-image: url(assets/img/habilidades/tecnicas/html.png);
 }
 
 .item-css {
-	background-image: url(assets/img/habilidades-tenicas/css.png);
+	background-image: url(assets/img/habilidades/tecnicas/css.png);
 }
 
 .item-ts {
-	background-image: url(assets/img/habilidades-tenicas/ts.png);
+	background-image: url(assets/img/habilidades/tecnicas/ts.png);
 }
 
 .item-c {
-	background-image: url(assets/img/habilidades-tenicas/c.png);
+	background-image: url(assets/img/habilidades/tecnicas/c.png);
 }
 
 .item-net-core {
-	background-image: url(assets/img/habilidades-tenicas/net-core.png);
+	background-image: url(assets/img/habilidades/tecnicas/net-core.png);
 }
 
 .item-php {
-	background-image: url(assets/img/habilidades-tenicas/php.png);
+	background-image: url(assets/img/habilidades/tecnicas/php.png);
 }
 
 .item-laravel {
-	background-image: url(assets/img/habilidades-tenicas/laravel.png);
+	background-image: url(assets/img/habilidades/tecnicas/laravel.png);
+}
+
+.item-node-js {
+	background-image: url(assets/img/habilidades/tecnicas/node-js.png);
 }
 
 .item-mysql {
-	background-image: url(assets/img/habilidades-tenicas/mysql.png);
+	background-image: url(assets/img/habilidades/tecnicas/mysql.png);
 }
 
 .item-maria-db {
-	background-image: url(assets/img/habilidades-tenicas/mariadb.svg);
+	background-image: url(assets/img/habilidades/tecnicas/mariadb.svg);
 }
 
 .item-postgresql {
-	background-image: url(assets/img/habilidades-tenicas/postgresql.png);
+	background-image: url(assets/img/habilidades/tecnicas/postgresql.png);
 }
 
 .item-sqlserver {
-	background-image: url(assets/img/habilidades-tenicas/sqlserver.png);
+	background-image: url(assets/img/habilidades/tecnicas/sqlserver.png);
 }
 
 .item-sqllite {
-	background-image: url(assets/img/habilidades-tenicas/sqllite.png);
+	background-image: url(assets/img/habilidades/tecnicas/sqllite.png);
 }
 
 .item-oracle {
-	background-image: url(assets/img/habilidades-tenicas/oracle.png);
+	background-image: url(assets/img/habilidades/tecnicas/oracle.png);
 }
 
 .item-flutter {
-	background-image: url(assets/img/habilidades-tenicas/flutter.png);
+	background-image: url(assets/img/habilidades/tecnicas/flutter.png);
+}
+
+.item-dart {
+	background-image: url(assets/img/habilidades/tecnicas/dart.png);
 }
 
 .item-java {
-	background-image: url(assets/img/habilidades-tenicas/java.png);
+	background-image: url(assets/img/habilidades/tecnicas/java.png);
 }
 
 .item-kotlin {
-	background-image: url(assets/img/habilidades-tenicas/kotlin.png);
+	background-image: url(assets/img/habilidades/tecnicas/kotlin.png);
 }
 
 .item-mvc {
-	background-image: url(assets/img/habilidades-tenicas/mvc.png);
+	background-image: url(assets/img/habilidades/tecnicas/mvc.png);
+}
+
+.item-modular {
+	background-image: url(assets/img/habilidades/tecnicas/modular.png);
 }
 
 .item-capas {
-	background-image: url(assets/img/habilidades-tenicas/capas.png);
+	background-image: url(assets/img/habilidades/tecnicas/capas.png);
+}
+
+.item-clean-architecture {
+	background-image: url(assets/img/habilidades/tecnicas/clean-architecture.png);
 }
 
 .item-hexagonal {
-	background-image: url(assets/img/habilidades-tenicas/hexagonal.png);
+	background-image: url(assets/img/habilidades/tecnicas/hexagonal.png);
 }
 
 .item-git {
-	background-image: url(assets/img/habilidades-tenicas/git.png);
+	background-image: url(assets/img/habilidades/tecnicas/git.png);
 }
 
 .item-facturacion-electronica {
-	background-image: url(assets/img/habilidades-tenicas/facturacion-electronica.png);
+	background-image: url(assets/img/habilidades/tecnicas/facturacion-electronica.png);
 }
 
 .item-linux {
-	background-image: url(assets/img/habilidades-tenicas/linux.png);
+	background-image: url(assets/img/habilidades/tecnicas/linux.png);
+}
+
+.item-jwt {
+	background-image: url(assets/img/habilidades/tecnicas/jwt.png);
 }
 
 .item-excel {
-	background-image: url(assets/img/habilidades-tenicas/excel.png);
+	background-image: url(assets/img/habilidades/tecnicas/excel.png);
 }
 
 .item-cpanel {
-	background-image: url(assets/img/habilidades-tenicas/cpanel.png);
+	background-image: url(assets/img/habilidades/tecnicas/cpanel.png);
+}
+
+.item-firebase {
+	background-image: url(assets/img/habilidades/tecnicas/firebase.svg);
 }
 
 .item-servidores-iis {
-	background-image: url(assets/img/habilidades-tenicas/servidores-iis.png);
+	background-image: url(assets/img/habilidades/tecnicas/servidores-iis.png);
+}
+
+.item-bot-whatsapp {
+	background-image: url(assets/img/habilidades/tecnicas/bot-whatsapp.png);
 }
 
 
+#landingHero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+#contenedorSkills,
+#contenedorEstudios,
+#contenedorProyectos,
+#contenedorContactame {
+	min-height: 100vh;
+}
 
-/* DEMO */
+#contenedorEstudios,
+#contenedorContactame {
+	background-color: #2C1A1E !important;
+}
+
+.habilidad {
+	width: 7rem;
+}
+
+.habilidad-blanda {
+	width: 9rem;
+	height: 100%;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1rem;
+}
+
+.skill-card {
+	background: #fff;
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s;
+}
+
+.skill-card:hover {
+	transform: scale(1.05);
+}
