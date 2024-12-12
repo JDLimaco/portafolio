@@ -91,6 +91,24 @@ function init() {
 
 }
 
+function descargarCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/documentos/CV--Juan-Diego-Limaco-Camarena--2025.pdf';  // Ruta al archivo PDF
+    link.download = 'CV--Juan-Diego-Limaco-Camarena--2025.pdf';  // Nombre del archivo que se descargará
+    document.body.appendChild(link);  // Agregar el enlace al DOM (no visible)
+    link.click();  // Simular clic para iniciar la descarga
+    document.body.removeChild(link);  // Eliminar el enlace del DOM
+}
+
+function descargarConstancia() {
+    const link = document.createElement('a');
+    link.href = 'assets/documentos/constancia-de-egresado.pdf';  // Ruta al archivo PDF
+    link.download = 'constancia-de-egresado.pdf';  // Nombre del archivo que se descargará
+    document.body.appendChild(link);  // Agregar el enlace al DOM (no visible)
+    link.click();  // Simular clic para iniciar la descarga
+    document.body.removeChild(link);  // Eliminar el enlace del DOM
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     (function () {
         init();
